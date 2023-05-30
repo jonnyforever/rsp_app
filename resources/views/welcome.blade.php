@@ -8,7 +8,7 @@
 @section('content')
     Welcome 
 
-    
+    <button class="btn btn-danger">Danger</button>
 
 @stop
 

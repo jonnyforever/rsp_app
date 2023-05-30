@@ -45,6 +45,8 @@ Route::get('/admin/user/roles', ['middleware' => ['role', 'auth', 'web'], functi
 
 Route::get('/admin', '\App\Http\Controllers\AdminController@index');
 
+Route::get('/admin/index', function(){ return view('admin.index'); });
+
 //sending email
 use Illuminate\Support\Facades\Mail;
 Route::get('/sendmail', function(){
